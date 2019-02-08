@@ -25,24 +25,24 @@ def print_depth(data):
     #print(keyOne)
 """
 
+
+index = 1
 def print_depth(data):
     for key, value in data.items():
-        index = 1
         if type(value) is dict:
             yield(key, value, index)
-            index = index + 1
             yield from print_depth(value)       
         else:
             yield(key, value, index)
-            index += 1
             
-
-
+            
 #print(print_depth(a))
 
 
 for key, value, index in print_depth(a):
-    print(key, value, index)
+    print(key,index)
+    if type(value) is dict:
+        index += 1
     
 
 
