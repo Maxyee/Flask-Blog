@@ -11,10 +11,11 @@ a = {
 }
 
 
+"""
 print(a['key1'])
 print(a['key2']['key3'])
 
-"""
+
 def print_depth(data):
     FirstLoopindex = 1
     for key, value in data.items():
