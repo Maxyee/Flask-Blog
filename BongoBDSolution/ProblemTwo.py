@@ -25,9 +25,10 @@ def print_depth(data):
         if type(value) is dict:
             yield(key, value, index)
             yield from print_depth(value)
-        elif type(value) is person_b:
-            yield(key, value, index)
-            yield from print_depth(value)       
+        elif type(value) is object.__doc__:
+            for key in person_b.items():
+                yield(key, value, index)
+                yield from print_depth(value)
         else:
             yield(key, value, index)
 
