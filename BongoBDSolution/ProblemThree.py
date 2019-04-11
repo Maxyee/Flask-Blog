@@ -1,12 +1,11 @@
 class Node:
 
-    # Constructor to create a new binary Node
     def __init__(self, key):
         self.key = key
         self.left = None
         self.right = None
 
-def findPath( root, path, k): # find the path from root node to given root of the tree
+def findPath( root, path, k):
     if root is None:
         return False
 
@@ -47,10 +46,7 @@ root.right.right = Node(7)
 root.left.left.left = Node(8)
 root.left.left.right = Node(9)
 
-print("LCA(4, 5) = %d" % (lca(root, 4, 5)))
-print("LCA(4, 6) = %d" % (lca(root, 4, 6)))
-print("LCA(3, 4) = %d" % (lca(root, 3, 4)))
-print("LCA(2, 4) = %d" % (lca(root, 2, 4)))
-print("LCA(3, 7) = %d" % (lca(root, 3, 7)))
-print("LCA(8, 9) = %d" % (lca(root, 8, 9)))
+
 print("LCA(2, 2) = %d" % (lca(root, 2, 2)))
+print("LCA(6, 7) = %d" % (lca(root, 6, 7)))
+print("LCA(3, 7) = %d" % (lca(root, 3, 7)))
