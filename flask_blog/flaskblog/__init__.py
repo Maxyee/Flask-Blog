@@ -7,6 +7,6 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'e62997d006694221ab21fdc90687ce9e'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 db = SQLAlchemy(app)
-Bcrypt = Bcrypt(app)
+bcrypt = Bcrypt(app)
 
 from flaskblog import routes
